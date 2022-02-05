@@ -24,15 +24,13 @@ def lets_break(n: int) -> int:
     :raise ValueError: если начальное значение счетчика больше 10
     :return: количество совершенных итераций
     """
+
+    current_value = n
     if n > 10:
         raise ValueError("Начальное значение больше 10")
-    # Текущее значение
-    current_value = n
-    # Счетчик итераций
-    counter = 0
-    while True:
-        # TODO тут написать код
-        pass
+    while n < 10:
+        n += 1
+    counter = 10 - current_value
     return counter
 
 
