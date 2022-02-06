@@ -10,7 +10,10 @@
 
 def multiplication_table(n: int) -> list:
     # TODO тут написать код
-    result = []
+    mult = []
+    for i in range(11):
+        mult.append(n * i)
+    result = mult
     return result
 
 
