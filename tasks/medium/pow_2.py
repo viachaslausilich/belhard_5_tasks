@@ -13,7 +13,14 @@ is_pow_2(17) -> False
 
 
 def is_pow_2(number) -> bool:
-    return None
+    n = 1
+    while number / n > 1:
+        n *= 2
+    if number / n < 1:
+        result = False
+    else:
+        result = True
+    return result
 
 
 if __name__ == '__main__':
